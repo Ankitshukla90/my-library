@@ -2,8 +2,7 @@ import React, { useState, useEffect, createContext, useContext } from 'react';
 import { HashRouter, Routes, Route, Link, NavLink, useParams, useNavigate, useLocation, Outlet } from 'react-router-dom';
 import { Book, Search, Plus, Home, Library, ArrowLeft, Star, AlertTriangle, Coffee, Heart } from 'lucide-react';
 
-// --- REDUX SIMULATION (Restored for Preview Stability) ---
-// NOTE: For your local assignment submission, you can keep this or use real @reduxjs/toolkit
+
 const ReduxContext = createContext();
 
 function createSlice({ name, initialState, reducers }) {
@@ -75,7 +74,6 @@ const useDispatch = () => {
 };
 
 // --- DATA ---
-// Using an Emerald/Paper theme color for placeholders
 const getCover = (title, color = "047857") => 
   `https://placehold.co/400x600/${color}/f0fdf4?text=${encodeURIComponent(title)}`;
 
@@ -117,7 +115,7 @@ const booksSlice = createSlice({
   initialState: initialBooks,
   reducers: {
     addBook: (state, action) => {
-      // Return new array with item at the beginning
+      
       return [action.payload, ...state];
     },
   },
@@ -131,7 +129,7 @@ const store = configureStore({
   },
 });
 
-// --- COMPONENTS ---
+
 
 // 1. Navbar
 const Navbar = () => {
