@@ -1,16 +1,92 @@
-# React + Vite
+Sushh Online Library System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the Sushh Online Library System, a modern, responsive single-page application built with React, Redux, and Tailwind CSS. This project simulates an online library where users can browse books, filter by category, search by title/author, and add new books to the collection.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## React Compiler
+Features;
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Home Page: A welcoming landing page featuring popular books and category shortcuts.
 
-## Expanding the ESLint configuration
+Browse Books: * Filter books by category (Dynamic Routing: /books/:category).
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Search functionality for filtering by title or author.
+
+"Back" button navigation.
+
+Book Details: A dedicated page displaying full book information (Title, Author, Description, Rating).
+
+Add Book: A form to contribute new books to the library.
+
+State managed via Redux Toolkit.
+
+Form validation included.
+
+Newly added books appear at the top of the list.
+
+404 Page: A custom "Page Not Found" route that handles undefined URLs and hides the main navigation bar.
+
+Responsive Design: Fully styled with Tailwind CSS featuring a custom "Indie Bookstore" aesthetic (Warm Stone & Emerald theme).
+
+
+
+
+Tech;
+
+React (Vite)
+
+Redux Toolkit (State Management)
+
+React Router DOM (Routing & Navigation)
+
+Tailwind CSS (Styling)
+
+Lucide React (Icons)
+
+
+
+
+Prerequisites;
+
+Before running the application, ensure you have Node.js installed on your machine.
+You can check this by running:
+
+node -v
+
+
+
+
+
+Installation & Running the App;
+
+Follow these steps to set up and run the project locally:
+
+Clone the repository:
+
+git clone <https://github.com/Ankitshukla90/my-library.git>
+cd my-library
+
+
+Install Dependencies:
+This installs React, Redux, Tailwind, and other necessary packages.
+
+npm install
+
+Start the Development Server:
+
+npm run dev
+
+
+Open in Browser:
+Click the link shown in the terminal http://localhost:5173 to view the application.
+
+
+
+
+Project Structure;
+
+src/App.jsx: Contains the main application logic, including the Redux store setup, routing configuration, and all page components.
+
+src/index.css: Contains the Tailwind directives.
+
+tailwind.config.js: Tailwind configuration file.
