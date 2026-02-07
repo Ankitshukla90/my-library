@@ -181,7 +181,7 @@ const Layout = () => (
     <footer className="bg-stone-100 border-t border-stone-200 mt-12 py-8">
       <div className="container mx-auto px-4 text-center">
         <p className="flex items-center justify-center gap-2 text-stone-500 font-medium">
-          Made with <Coffee size={16} className="text-orange-700"/> and React by Sushh
+          Made with <Coffee size={16} className="text-orange-700"/> and React by Ankit Shukla
         </p>
         <p className="text-xs text-stone-400 mt-2">© {new Date().getFullYear()} Sushh Online Library System</p>
       </div>
